@@ -1,2 +1,2 @@
-# Foo's Client Installer
-Simple mod to install [foo's client](https://github.com/mindustry-antigrief/mindustry-client)
+# Genshindustry Installer
+Simple mod to install [Genshindustry](https://github.com/WilloIzCitron/Genshindustry)
