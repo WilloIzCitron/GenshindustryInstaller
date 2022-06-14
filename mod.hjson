@@ -1,8 +1,8 @@
-displayName: "Foo's Client Installer"
-name: "fooInstaller"
-author: "foo, buthed010203"
-main: "fooInstaller.Main"
-description: "Simple mod to install Foo's client. Foo's client features hundreds of quality of life improvements to the mindustry experience while making as few compromises as possible."
-version: "1.2.3"
+displayName: "Genshindustry Installer"
+name: "genshindustryInstaller"
+author: "WilloIzCitron"
+main: "genshindustryInstaller.Main"
+description: "Installer of Genshindustry, Genshindustry is a custom client where the features is more advanced than original excapt music and fonts."
+version: "1.0.0"
 minGameVersion: 128
 hidden: true

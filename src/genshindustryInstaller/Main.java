@@ -1,4 +1,4 @@
-package fooInstaller;
+package genshindustryInstaller;
 
 import arc.*;
 import arc.files.*;
@@ -31,15 +31,14 @@ public class Main extends Mod{
             }
             BaseDialog dialog = new BaseDialog("Client Installer");
             if (mobile) { // Client doesn't work on mobile, bail out
-                dialog.cont.add("[scarlet]Foo's client isn't available on mobile!");
+                dialog.cont.add("[scarlet]Genshindustry isn't available on mobile!");
                 Vars.mods.setEnabled(Vars.mods.getMod(this.getClass()), false);
             } else {
-                dialog.cont.add("[accent]Select a version of the client to download").colspan(2).row();
-                dialog.cont.button("v6", () -> install("mindustry-antigrief/mindustry-client-v6-builds")).fillX();
-                dialog.cont.button("v7", () -> install("mindustry-antigrief/mindustry-client-v7-builds")).fillX();
+                dialog.cont.add("[accent]Select a channel of the client to download").colspan(2).row();
+                dialog.cont.button("Release Channel", () -> install("mindustry-antigrief/mindustry-client-v6-builds")).fillX();
+                dialog.cont.button("Beta Channel", () -> install("mindustry-antigrief/mindustry-client-v7-builds")).fillX();
             }
             dialog.addCloseButton();
-            dialog.buttons.button("Join Our Discord", Icon.discord, () -> Core.app.openURI("https://discord.gg/yp9ZW7j")).wrapLabel(false);
             dialog.show();
         });
     }
@@ -99,7 +98,6 @@ public class Main extends Mod{
                     cancel[0] = true;
                     dialog.hide();
                 }).size(210f, 64f);
-                dialog.buttons.button("Join Our Discord", Icon.discord, () -> Core.app.openURI("https://discord.gg/yp9ZW7j")).size(210f, 64f);
                 dialog.setFillParent(false);
                 dialog.show();
             }catch(Exception e){
