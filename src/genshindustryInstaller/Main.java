@@ -35,8 +35,7 @@ public class Main extends Mod{
                 Vars.mods.setEnabled(Vars.mods.getMod(this.getClass()), false);
             } else {
                 dialog.cont.add("[accent]Select a channel of the client to download").colspan(2).row();
-                dialog.cont.button("Release Channel", () -> install("mindustry-antigrief/mindustry-client-v6-builds")).fillX();
-                dialog.cont.button("Beta Channel", () -> install("mindustry-antigrief/mindustry-client-v7-builds")).fillX();
+                dialog.cont.button("Release Channel", () -> install("WilloIzCitron/Genshindustry")).fillX().center();
             }
             dialog.addCloseButton();
             dialog.show();
